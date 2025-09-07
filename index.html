@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./fonts/fonts.css" rel="stylesheet" />
+     <link href="./styles/global.css" rel="stylesheet" />
     <link href="./styles/style.css" rel="stylesheet" />
-    <link href="./styles/global.css" rel="stylesheet" />
+   
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
   </head>
 
@@ -104,11 +105,13 @@
       </section>
 
       <section class="about">
-        <div>
-          <img src="/images/logo-black.svg" />
+        <div class="about__column">
+        <div class="about__logo">
+          <img class="about__logo-image"  src="images/logo-white.svg" alt="Оно тебе надо" />
         </div>
-        <div>
-          <h2>Об аукционе</h2>
+        <div class="about__content">
+          <h2 title="about__title">Об аукционе</h2>
+          <div class="about__text">
           <p>
             Здесь вы не встретите очередное пафосное собрание невероятно
             дорогого антиквариата. Наши лоты вообще не должны были попасть ни на
@@ -124,6 +127,8 @@
             представить современную культуру. Когда в эти вещи не верил никто,
             продолжали верить их создатели. И сейчас эти лоты стали культовыми.
           </p>
+          </div>
+        </div>
         </div>
       </section>
     </main>
