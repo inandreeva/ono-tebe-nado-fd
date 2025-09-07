@@ -1,3 +1,4 @@
+/* --- Header --- */
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
@@ -46,4 +47,87 @@
 
 .header__address {
   align-items: flex-start;
+}
+
+/* --- Cover --- */
+.cover {
+  position: relative;
+
+  min-height: 757px;
+  background-image: url("../images/cover.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+.cover__title,
+.cover__description {
+  position: relative;
+  z-index: 1;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.cover__title {
+  padding: 165px 50px 207px 50px;
+
+  font-size: 100px;
+  font-weight: 700;
+  letter-spacing: 30px;
+}
+
+.aligned-text {
+  display: block;
+}
+
+.aligned-text_left {
+  text-align: left;
+}
+
+.aligned-text_center {
+  text-align: center;
+}
+
+.aligned-text_right {
+  text-align: right;
+}
+
+/* .letter-spacing-extended {
+  letter-spacing: 30px;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0;
+} */
+
+.cover__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  font-size: 22px;
+}
+
+.cover__description-text {
+  letter-spacing: 5px;
+  font-weight: 400;
+}
+
+.bet-button {
+  padding: 12px 32px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  cursor: pointer;
 }

@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./styles/global.css" rel="alternate stylesheet" />
+    <link href="./fonts/fonts.css" rel="stylesheet" />
     <link href="./styles/style.css" rel="stylesheet" />
-    <link href="./fonts/fonts.css" rel="fontscsscss" />
+    <link href="./styles/global.css" rel="stylesheet" />
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
   </head>
-  
+
   <body>
     <header class="header">
       <nav class="header__menu">
@@ -43,10 +43,20 @@
 
     <main>
       <section class="cover">
-        <h1><span>Оно</span> <span>тебе</span> <span>надо</span></h1>
-        <div class="description">
-          <div>Аукцион вещей, в которые никто не верил</div>
-          <button>Сделать ставку</button>
+        <div class="overlay"></div>
+        <h1 class="cover__title">
+          <span class="aligned-text aligned-text_left"
+            >Оно</span
+          >
+          <span class="aligned-text aligned-text_center">тебе</span>
+          <span class="aligned-text aligned-text_right"
+            >надо</span>
+        </h1>
+        <div class="cover__description">
+          <div class="cover__description-text">
+            Аукцион вещей, в которые никто не верил
+          </div>
+          <button class="bet-button">Сделать ставку</button>
         </div>
       </section>
 
