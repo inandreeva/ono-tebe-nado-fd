@@ -1,6 +1,7 @@
 h2 {
   font-size: 40px;
   font-weight: 700;
+  padding-left: 64px;
   text-transform: uppercase;
 }
 
@@ -9,15 +10,18 @@ h2 {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  padding: 95px 50px 100px 50px;
+  padding: 89px 50px 94px 50px;
   font-size: 18px;
 }
 
 .header__links-list {
   display: flex;
-  gap: 30px;
-  padding-inline-start: 0;
+  gap: 32px;
   list-style: circle;
+}
+
+.header__links-list-item::marker {
+  font-size: 20px;
 }
 
 .header__links-list li:first-child {
@@ -39,23 +43,19 @@ h2 {
 
 .header__logo {
   display: block;
-  width: 148px;
-  height: 105px;
+  width: 138px;
 }
 
 .address {
   display: flex;
   flex-direction: column;
-  max-width: 240px;
+  max-width: 239px;
   font-style: normal;
+  line-height: 1.35;
 }
 
 .header__address {
   justify-self: end;
-}
-
-.header__address {
-  align-items: flex-start;
 }
 
 /* --- Cover --- */
@@ -87,8 +87,7 @@ h2 {
 }
 
 .cover__title {
-  padding: 165px 50px 207px 50px;
-
+  padding: 162px 50px 141px 50px;
   font-size: 100px;
   font-weight: 700;
   letter-spacing: 30px;
@@ -110,24 +109,26 @@ h2 {
   text-align: right;
 }
 
-/* .letter-spacing-extended {
+.letter-spacing-extended {
   letter-spacing: 30px;
+  /* padding-left: 27px;
+    padding-top: 19px; */
 }
 
 .no-letter-spacing {
   letter-spacing: 0;
-} */
+}
 
 .cover__description {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px;
+  padding: 0 50px;
   font-size: 22px;
 }
 
 .cover__description-text {
-  word-spacing: 20px;
+  word-spacing: 19px;
   font-weight: 400;
 }
 
@@ -147,8 +148,9 @@ h2 {
 }
 
 .lots__card-list {
+  padding: 24px;
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: 9px;
   gap: 25px;
 }
 
@@ -162,8 +164,8 @@ h2 {
 
 .card {
   position: relative;
-  height: 723px;
-  padding: 50px;
+  height: 596px;
+  padding: 51px 40px 46px 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -213,13 +215,13 @@ h2 {
 
 .lots__look-more-link {
   font-size: 20px;
-  margin-left: 40px;
+  margin-left: 64px;
   text-decoration: underline;
 }
 
 /* --- About --- */
 .about {
-  margin-top: 180px;
+  margin-top: 154px;
 }
 
 .about__column {
@@ -229,6 +231,7 @@ h2 {
 
 .about__logo {
   position: relative;
+  margin-left: 71px;
   width: 240px;
   height: 240px;
   border-radius: 50%;
@@ -239,11 +242,17 @@ h2 {
 .about__logo-image {
   position: absolute;
   top: 25%;
-  height: 114px;
+  height: 118px;
+}
+
+.about__content {
+  padding-top: 100px;
 }
 
 .about__text {
   display: flex;
+  font-size: 20px;
+  margin-top: 100px;
   flex-direction: column;
   gap: 24px;
 }
