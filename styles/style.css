@@ -247,7 +247,7 @@
   padding-top: 4px;
 }
 
-.about__headnig {
+.about__heading {
   font-size: 40px;
   font-weight: 700;
   margin: 101px 18px 100px 16px;
@@ -289,9 +289,6 @@
 .footer__menu-list {
   list-style: none;
   text-align: center;
-}
-
-.footer__menu-list-item {
 }
 
 .footer__menu-link {
